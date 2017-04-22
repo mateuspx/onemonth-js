@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Happy Hour App - How about a drink!?">
+		<meta name="keywords" content="happy hour, drink, beers">
+
+		<title>Happy Hour</title>
+
+		<!-- external CSS link -->
+    <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/normalize.css">
+
+    <style>
+      body {
+        font-family: font-family: -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, sans-serif;
+        color: #2b108a;
+        font-weight: 700;
+        font-size: 2rem;
+        background-color: #d8f278;
+        padding: 2rem;
+      }
+
+      img {
+          display: block;
+          height: 300px;
+      }
+    </style>
+
+		<script>
+      var username = prompt("Hello, who are you?");
+      var car = new Array("BMW", "Mercedes");
+      var carPhoto = new Array("<img src='assets/bmw.jpg' alt='BMW'>", "<img src='assets/mercedes.jpg' alt='Mercedes'>");
+
+      if(username==="Chris") {
+        document.write("<h1> Hello" + username + ", you won a " + car[0] + "!<h1>" + carPhoto[0]);
+      }
+      else if(username==="Mateus") {
+        document.write("<h1> Hello " + username + ", you won a " + car[1] + "!<h1>" + carPhoto[1]);
+      }
+      else if (username==="") {
+        document.write("<h1>Hello person with no name.<h1>");
+      }
+      else {
+        document.write("<h1> Hello " + username + "!<h1>");
+      }
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
