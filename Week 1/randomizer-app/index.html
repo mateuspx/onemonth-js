@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+      body {
+        color: #edffaa;
+        background: #5f97df no-repeat center center fixed;
+        background-size: cover;
+        font-family: -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, sans-serif;
+        font-size: 4rem;
+        font-weight: 300;
+        padding: 4rem;
+      }
+
+      p {
+        margin: 0;
+        padding: 4rem;
+        background-color: rgba(16,45,82,0.85);
+        display: inline-block;
+      }
+
+      span {
+        font-weight: 800;
+        display: block;
+      }
+
+      /*body {
+        background-image: url("https://images.unsplash.com/photo-1432163230927-a32e4fd5a326?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
+      }*/
+    </style>
+
+    <script type="text/javascript">
+      var vehicles = [
+        '<span>Convertible</span>',
+        '<span>Segway</span>',
+        '<span>Bycicle</span>',
+        '<span>Motocycle</span>',
+        '<span>Bustour</span>',
+        '<span>pair of sneakers</span>'
+      ];
+
+      var places = [
+        '<span>Rio de Janeiro</span>',
+        '<span>Tokyo</span>',
+        '<span>Amsterdam</span>',
+        '<span>San Francisco</span>',
+        '<span>Sidney</span>',
+        '<span>London</span>',
+        '<span>Rome</span>',
+        '<span>Hong Kong</span>',
+        '<span>Miami</span>',
+        '<span>NYC</span>',
+      ];
+
+      var photo = [
+      /*Rio*/ "<style>body{background-image: url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=');}</style>",
+      /*Tokyo*/ "<style>body{background-image: url('https://images.unsplash.com/photo-1478039414627-50a2aee2e122?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=&bg=');}</style>",
+      /*Amsterdam*/ "<style>body{background-image: url('https://images.unsplash.com/photo-1467739514899-277e514b48da?dpr=2&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=&bg=');}</style>",
+      /*San Francisco*/ "<style>body{background-image: url('https://images.unsplash.com/photo-1414005987108-a6d06de8769f?dpr=2&auto=format&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb&crop=&bg=');}</style>",
+      /*Sidney*/"<style>body{background-image: url('https://images.unsplash.com/photo-1445978259239-a6c453c3513a?dpr=2&auto=format&fit=crop&w=1500&h=775&q=80&cs=tinysrgb&crop=&bg=');}</style>",
+      /*London*/"<style>body{background-image: url('https://images.unsplash.com/photo-1477075591468-abe3aefdd46c?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=&bg=');}</style>",
+      /*Rome*/"<style>body{background-image: url('https://images.unsplash.com/photo-1462747772350-460bb4aad7f4?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=');}</style>",
+      /*Hong Kong*/"<style>body{background-image: url('https://images.unsplash.com/photo-1444256386816-4fa3d3d18870?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=');}</style>",
+      /*Miami*/"<style>body{background-image: url('https://images.unsplash.com/photo-1478976894143-05f3d8b08748?dpr=2&auto=format&fit=crop&w=1500&h=768&q=80&cs=tinysrgb&crop=&bg=');}</style>",
+      /*NYC*/"<style>body{background-image: url('https://images.unsplash.com/photo-1432163230927-a32e4fd5a326?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=');}</style>",
+      ];
+
+      var randomVehicle = Math.floor(Math.random()*vehicles.length);
+      var randomPlace = Math.floor(Math.random()*places.length);
+
+      var selectedVehicle = vehicles[randomVehicle];
+      var selectedPlace = places[randomPlace];
+      var selectedPhoto = photo[randomPlace];
+
+      if (selectedVehicle === '<span>pair of sneakers</span>') {
+        document.write("<p>Take a " + selectedVehicle + " and give them a spin in " + selectedPlace + "</p>");
+      }
+      else {
+        document.write("<p>Take a " + selectedVehicle + " and give it a spin in " + selectedPlace + "</p>");
+      }
+
+      document.write(selectedPhoto);
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
