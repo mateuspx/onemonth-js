@@ -34,8 +34,11 @@
       var username = prompt("Hello, who are you?");
       var car = new Array("BMW", "Subaru", "Honda");
 
-      if(username==="Chris") {
-        document.write("<h1> Hello " + username + ", you won a " + car[0] + "!<h1>");
+			if(username==="Chris") {
+        document.write("<h1> Hello" + username + ", you won a " + car[0] + "!<h1>");
+      }
+      else if(username==="Mateus") {
+        document.write("<h1> Hello " + username + ", you won a " + car[1] + "!<h1>");
       }
       else {
         document.write("<h1> Hello " + username + "!<h1>");
