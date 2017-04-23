@@ -18,16 +18,22 @@
 				'Siggys',
 				'Blind Tiger',
 				'Zum Schneider',
-				'One Month',
 				'Home Sweet Home',
 				'Union Pool'
+			];
+
+			var barLocations = [
+				"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.694078230457!2d-73.99531278450881!3d40.72475057933048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259850cbcc303%3A0x306bb91aab0eba0d!2sSiggy&#39;s+Good+Food!5e0!3m2!1spt-BR!2sbr!4v1492906902756' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe>",
+				"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3709109052593!2d-74.0054253845086!3d40.73186327932977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25993a10b6e59%3A0x974ded5ed3f5e014!2sBlind+Tiger!5e0!3m2!1spt-BR!2sbr!4v1492906952387' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe>",
+				"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.716639636975!2d-73.9811056845088!3d40.724253979330584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25979dcad5647%3A0xeb77bc74cd054f06!2sZum+Schneider+NYC!5e0!3m2!1spt-BR!2sbr!4v1492906999990' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe>",
+				"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9322290874766!2d-73.99570468450902!3d40.719508379331174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25987ca93a26f%3A0xa8bcefbb25e0645f!2sHome+Sweet+Home!5e0!3m2!1spt-BR!2sbr!4v1492907272876' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe>",
+				"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.139534647086!2d-73.95161437637921!3d40.71494469535092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259596cfc174d%3A0x86b6b9e123c6dd36!2sUnion+Pool!5e0!3m2!1spt-BR!2sbr!4v1492907381020' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe>"
 			];
 
 			// Our List of Friends
 			var friends = [
 				'Mattan',
 				'Chris',
-				'Lee',
 				'Casey',
 				'that girl you forgot to text back',
 				'Kayne West'
@@ -36,12 +42,10 @@
 			var randomNumber = Math.floor(Math.random()*bars.length);
 
 			var barname = bars[randomNumber];
-			document.write(randomNumber + "<br/>");
 			var friendname = friends[randomNumber];
+			var barLocationMap = barLocations[randomNumber]
 
-			document.write("How about you go to <strong>" + barname + "</strong> with <strong>" + friendname + "</strong>?");
-
-			document.write("<br/>" + bars.length);
+			document.write("How about you go to <strong>" + barname + "</strong> with <strong>" + friendname + "</strong>?" + barLocationMap);
 		</script>
 	</head>
 	<body>
